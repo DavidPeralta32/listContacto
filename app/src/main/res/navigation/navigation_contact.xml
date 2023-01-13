@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_contact"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.daviperalta.listacontactos.presentation.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_list_Contact_Fragment2"
+            app:destination="@id/list_Contact_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/list_Contact_Fragment2"
+        android:name="com.daviperalta.listacontactos.presentation.contact.List_Contact_Fragment"
+        android:label="fragment_list__contact_"
+        tools:layout="@layout/fragment_list__contact_" />
+</navigation>
